@@ -1,6 +1,6 @@
 # gym-pomdp-wrappers
 
-**gym-pomdp-wrappers** is a set of wrappers that can be used to turn some specific OpenAI gym environments into Partially Observable Markov Decision Processes (POMDPs).
+**gym-pomdp-wrappers** is a set of wrappers that can be used to turn some specific OpenAI Gym environments into Partially Observable Markov Decision Processes (POMDPs).
 
 
 ## Dependencies
@@ -15,12 +15,12 @@ This pacakge requires python3 (>=3.5). Additionally, you need the following pack
 
 After installaling the dependencies, you can perform a install of **gym-pomdp-wrappers** with:
 
-.. code:: shell
 
-    git clone https://github.com/stweigand/gym-pomdp-wrappers.git
-    cd gym-pomdp-wrappers
-    pip install -e .
-
+```bash
+git clone https://github.com/stweigand/gym-pomdp-wrappers.git
+cd gym-pomdp-wrappers
+pip install -e .
+```
 
 ## Implemented Wrappers
 
@@ -39,13 +39,13 @@ Some of the wrappers use [MuJoCo](http://www.mujoco.org) (multi-joint dynamics i
 
 ## Citing the Project
 
-This repository is part of my Master's thesis which is about "Guided Reinforcement Learning Under Partial Observability". (I will later add a link here)
-Here is a BibTeX entry that you can use to cite it in a publication::
+This repository is part of my Master's thesis which is about "Guided Reinforcement Learning Under Partial Observability" (Link will be added later). Here is a BibTeX entry that you can use to cite it in a publication::
 
 ```
-    @mastersthesis{guidedreinforcementlearning,
+@mastersthesis{guidedreinforcementlearning,
     Author = {Stephan Weigand},
     School = {Technische Universit{\"a}t Darmstadt},
     Title = {Guided Reinforcement Learning Under Partial Observability},
-    Year = {2019}}
+    Year = {2019}
+}
 ```
