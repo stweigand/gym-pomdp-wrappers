@@ -24,13 +24,32 @@ pip install -e .
 
 ## Implemented Wrappers
 
-[WIP]
+* ** MuJoCoHistoryEnv:** Stacks observations from a given MuJoCo environment to a history of given length. There are multiple history types implemented. For the POMDP versions of some tasks are dimensions of the observation vecotor specified which will be overwritten with zeros.
+
+* **RockSampleHistoryEnv:** Stacks observations (and additional information) from a RockSample instance to a history of given length. The history types specifiy which information are added to the history.
+
+* ** NoisyEnv:** Takes observations from an environment and adds guassian noise.
+
+Detailed information on the different history types and usage will be added later! See the comments in the code for further information.
 
 
 ## Example
 
-[WIP]
+Environments could be initialized as follows:
+```python3
+import gym
+from gym_pomdp_wrappers import MuJoCoHistoryEnv
+env = MuJoCoHistoryEnv("Walker2d-v2", hist_len=4, history_type="history_ac_pomdp")
 
+```
+
+```python3
+import gym
+import gym_pomdp
+from gym_pomdp_wrappers import RockSampleHistoryEnv
+env = RockSampleHistoryEnv("Rock-v0", hist_len=4, history_type="history_full", kwargs={'board_size':5, 'num_rocks':5})
+
+```
 
 ## MuJoCo
 
