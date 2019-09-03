@@ -24,11 +24,11 @@ pip install -e .
 
 ## Implemented Wrappers
 
-* ** MuJoCoHistoryEnv:** Stacks observations from a given MuJoCo environment to a history of given length. There are multiple history types implemented. For the POMDP versions of some tasks are dimensions of the observation vecotor specified which will be overwritten with zeros.
+* **MuJoCoHistoryEnv:** Stacks observations from a given MuJoCo environment to a history of given length. There are multiple history types implemented. For the POMDP versions of some tasks are dimensions of the observation vecotor specified which will be overwritten with zeros.
 
 * **RockSampleHistoryEnv:** Stacks observations (and additional information) from a RockSample instance to a history of given length. The history types specifiy which information are added to the history.
 
-* ** NoisyEnv:** Takes observations from an environment and adds guassian noise.
+* **NoisyEnv:** Takes observations from an environment and adds guassian noise.
 
 Detailed information on the different history types and usage will be added later! See the comments in the code for further information.
 
