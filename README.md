@@ -28,7 +28,7 @@ pip install -e .
 
 * **RockSampleHistoryEnv:** Stacks observations (and additional information) from a RockSample instance to a history of given length. The history types specifiy which information are added to the history.
 
-* **NoisyEnv:** Takes observations from an environment and adds guassian noise.
+* **NoisyEnv:** Takes observations from an environment, adds guassian noise and stacks them to a history of given length. There are multiple history types implemented.
 
 Detailed information on the different history types and usage will be added later! See the comments in the code for further information.
 
